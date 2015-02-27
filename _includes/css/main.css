@@ -443,7 +443,7 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 .list-inline-nav {
-
+text-align: center;
 }
 .list-inline-nav .btn-nav {
     display: inline-block;
