@@ -16,11 +16,11 @@ color:
 # Nav-menu
 nav:
   - title: user
-    url: http://salipropham.github.io
+    url: //salipropham.github.io
   - title: github
-    url: http://twitter.com/jekyllrb
+    url: //github.com/salipropham/unpacker
   - title: download
-    url: http://twitter.com/jekyllrb
+    url: //github.com/salipropham/unpacker/archive/master.zip
 
 
 # Footer settings
