@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="content" style="min-height: 100px">
+	<div class="container">
+<script src="/js/unpacker/jquery.js?v=1.4"></script>
+  <script>
+  !(function($){
+   $.require("unpacker/unPacker.js");
+    $.bind({
+      "#unpack": {
+        "click": function () {
+          $("#out").val(unPack($("#input").val()));
+        }
+      },
+      "#clear": {
+        "click": function () {
+          $("textarea").val('');
+        }
+      }
+    });
+  })(jQuery);
+  </script>
+
+<p>
+  <label>Past your code here...</label>
+  <textarea name="input" id="input" cols="60" rows="10">eval(function(p,a,c,k,e,r){e=String;if(!''.replace(/^/,String)){while(c--)r[c]=k[c]||c;k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(0(){4 1="5 6 7 8";0 2(3){9(3)}2(1)})();',10,10,'function|b|something|a|var|some|sample|packed|code|alert'.split('|'),0,{}))</textarea>
+  
+</p>
+<p>
+  <input type="button" name="unpack" id="unpack" value="UnPack">
+  <input type="button" name="clear" id="clear" value="Clear ">
+  
+	</p>
+<p>
+
+  <textarea name="out" id="out" cols="60" rows="30"></textarea>
+
+</p>
+</div>
+</div>
